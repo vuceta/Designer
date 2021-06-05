@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css?family=Pontano+Sans&display=swap");
+:root {
+  --gray: #333333;
+  --darkgray: #2e2e2e;
+  --yellow: #f3cd52;
+  --lightgray: rgba(255, 255, 255, 0.4);
+  --white: #fff;
+  --transition: 0.4s ease;
+  --fontSize: 16px;
+}
+/* basic */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Pontano Sans", sans-serif;
+  font-size: var(--fontSize);
+  background: var(--gray);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--darkgray);
+}
+a {
+  text-decoration: none;
+  color: var(--gray);
+}
+a:hover {
+  transition: var(--transition);
+}
+p {
+  color: var(--lightgray);
+}
+
+.clearfix {
+  padding: 50px 100px;
+}
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+main {
+  margin-top: -5px;
+  background: var(--gray);
+  color: var(--white);
+}
+button {
+  padding: 15px 40px;
+  background: var(--yellow);
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid var(--darkgray);
+  color: var(--gray);
+  cursor: pointer;
+  transition: var(--transition);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+button:hover {
+  background: var(--white);
+}
+hr {
+  width: 80%;
+  margin: auto;
+}
+/* topbar */
+nav {
+  background: var(--yellow);
+  text-align: center;
+  padding: 30px 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 60px;
+  margin-bottom: 40px;
+}
+nav ul li a {
+  text-align: center;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: var(--white);
+}
+/* header */
+header section {
+  background: var(--yellow);
+  text-align: center;
+}
+header h1 {
+  font-size: 3.8rem;
+  margin-bottom: 25px;
+}
+header p {
+  color: var(--darkgray);
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+header div {
+  margin: 0 200px;
+}
+header img {
+  width: 100%;
+  border: 30px solid #f7da7e;
+  border-bottom: none;
+}
+
+/* main */
+
+.uvod {
+  text-align: center;
+}
+.uvod article {
+  width: 33%;
+  float: left;
+}
+.uvod h3 {
+  color: var(--white);
+  padding: 0 0 30px 0;
+  font-size: 2.4rem;
+}
+.uvod p {
+  padding: 0 150px;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+.uvod button {
+  margin: 35px;
+}
+/*****
+Blog
+*****/
+.portfolio h3 {
+  text-align: center;
+  color: var(--white);
+  padding: 30px;
+  margin-top: 50px;
+  font-size: 3.2rem;
+}
+.portfolio p {
+  text-align: center;
+}
+.blog article {
+  width: 25%;
+  float: left;
+  padding: 40px 70px;
+}
+.blog img {
+  width: 100%;
+}
+.blog h3 {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 20px;
+}
+.blog p {
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 70px;
+}
+.blog button {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+/******
+contact
+******/
+.contact {
+  text-align: center;
+  padding: 50px 0;
+}
+.contact h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+.contact p {
+  color: var(--lightgray);
+  padding: 20px;
+}
+.contact form {
+  width: 40%;
+  margin: auto;
+}
+.contact form input,
+.contact form textarea {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  border: none;
+  padding: 20px;
+  font-size: 1.2rem;
+  background: var(--darkgray);
+}
+::placeholder {
+  color: var(--white);
+}
+/******
+footer
+******/
+footer {
+  text-align: center;
+}
+footer h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+footer p {
+  color: var(--lightgray);
+  padding: 20px;
+}
+footer i {
+  padding: 20px;
+  background: var(--yellow);
+  color: var(--gray);
+  font-size: 1.5rem;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+footer .copy {
+  padding: 50px;
+}
+/***********
+Responsive
+***********/
+@media (max-width: 768px) {
+  nav ul li {
+    display: inline-block;
+    margin: 3px;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header p {
+    font-size: 1.2rem;
+  }
+  header div {
+    margin: 0 10px;
+  }
+  header img {
+    width: 100%;
+    border: 10px solid #f7da7e;
+    border-bottom: none;
+  }
+  .uvod article {
+    width: 100%;
+  }
+  .clearfix {
+    padding: 1px 1px;
+  }
+  .uvod h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .uvod p {
+    text-align: center;
+    padding: 0 15px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  .portfolio h3 {
+    text-align: center;
+    color: var(--white);
+    padding: 3px;
+    margin-top: 15px;
+    font-size: 2rem;
+  }
+  .portfolio p {
+    text-align: center;
+    padding: 0 15px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  .blog article {
+    width: 100%;
+    padding: 4px 7px;
+  }
+  .blog h3 {
+    color: var(--white);
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .blog p {
+    text-align: center;
+    line-height: 1.6;
+  }
+  .blog button {
+    margin-left: 90px;
+    margin-top: 20px;
+  }
+  .contact h2 {
+    text-align: center;
+    color: var(--white);
+    padding: 3px;
+    margin-top: 15px;
+    font-size: 2rem;
+  }
+  hr {
+    width: 80%;
+    margin: 30px auto;
+  }
+  .contact {
+    text-align: center;
+    padding: 0px 0;
+  }
+  .contact form {
+    width: 100%;
+  }
+  footer h2 {
+    text-align: center;
+    color: var(--white);
+    padding: 3px;
+    margin-top: 15px;
+    font-size: 2rem;
+  }
+  footer i {
+    padding: 20px;
+    background: var(--yellow);
+    color: var(--gray);
+    font-size: 1.5rem;
+    margin: 10px;
+    margin-bottom: 40px;
+  }
+}
